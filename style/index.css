@@ -1,0 +1,45 @@
+/* .hero-right{
+    background-image: url(../images/shapes/Group\ 8450.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+ .hero-container{
+    max-width: 1440px;
+    margin: 0 auto;
+ }
+ .hero-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+ }
+ .hero-title1{
+    color: rgb(209, 228, 36);
+    font-size: 3.75rem;
+    font-weight: 700;
+ }
+ .hero-title{
+    color: rgba(87, 87, 87, 1);
+    font-size: 3.75rem;
+    font-weight: 700;
+ }
+ .hero-description{
+    color: rgba(130, 130, 130, 1);
+    font-size: 1.25rem;
+    font-weight: 500;
+ }
+ .btn1{
+    background-color: rgb(185, 253, 27);
+    padding: 22px 24px;
+    border-radius: 78px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.125rem;
+    font-weight: 600;
+ }
+ .btn1:hover{
+    cursor: pointer;
+    background-color: aqua;
+ }
+ /* about style */
