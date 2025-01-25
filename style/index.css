@@ -4,8 +4,8 @@
     background-position: center;
     background-size: cover;
 } */
- .hero-container{
-    max-width: 1440px;
+ .hero-container,  .box-container, .followers-container{
+    max-width: 1220px;
     margin: 0 auto;
  }
  .hero-container{
@@ -42,4 +42,196 @@
     cursor: pointer;
     background-color: aqua;
  }
+ .hero-right img{
+    max-width: 100%;
+ }
+ /* responsive */
+ @media screen and (max-width:576px) {
+    .hero-container{
+        flex-direction: column-reverse;
+    }
+    .btn1{
+        margin-left: 160px;
+        margin-bottom: 10px;
+    }
+    
+ }
  /* about style */
+ .about-container{
+    background-image: url(../images/shapes/7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height:600px; 
+    background-color: bisque;
+ }
+ .about-left{
+    width: 735px;
+ }
+ .about-right{
+    width: 705px;
+    padding-left: 50px;
+ }
+ .about-left img{
+    padding-top: 60px;
+    padding-left: 200px;
+ }
+ .about-title{
+    color: rgba(112, 112, 112, 1);
+    font-size: 2.5rem;
+    font-weight: 700;
+ }
+ .about-description{
+    color: rgba(24, 25, 31, 1);
+    font-size: 1.125rem;
+    font-weight: 400;
+ }
+ /* responsive */
+ @media screen and (max-width:576px) {
+    .about-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .about-right{
+        width: auto;
+        height: 100%;
+        padding: 5px;
+    }
+    .about-left{
+        width: auto;
+        height: auto;
+    }
+    .about-left img{
+        padding-top: 0px;
+        padding-left: 0px;
+     }
+ }
+ /* recipe style */
+ .box-container{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 10px;
+ }
+ .box{
+   /* width: 550px;
+   height: 500px; */
+   padding: 30px;
+   border-radius: 30px;
+   background-color: aliceblue;
+   box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.2), 0px 5px 20px 0px rgba(0,0,0,0.19);
+ }
+ .box:hover{
+   transform:translateX(200px) ;
+ }
+ .box1{
+   /* width: 550px;
+   height: 500px; */
+   padding: 30px;
+   border-radius: 30px;
+   background-color: aliceblue;
+   box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.2), 0px 5px 20px 0px rgba(0,0,0,0.19);
+ }
+ .box1:hover{
+   transform:translateX(-200px) ;
+ } 
+ .box-title{
+   color: rgba(24, 25, 31, 1);
+   font-size: 1.75rem;
+   font-weight: 700;
+ }
+ .recipe{
+   padding: 72px 367px; 
+   text-align: center;
+ }
+ .box img{
+  width: 100%;
+ }
+ .box1 img{
+width: 100%;
+ }
+ /* responsive */
+ @media screen and (max-width:576px) {
+   .recipe{
+      padding: 10px;
+   }
+   .box-container{
+      grid-template-columns: 1fr;
+   }
+   .box1{
+      height: 100%;
+      padding: auto;
+   }
+   .box{
+      width: auto;
+      height: 100%;
+   }
+   .box:hover{
+      
+      transform: none;
+   }
+  
+   .box1:hover{
+      transform: none;
+   }
+ 
+ }
+ /* followers style */
+ .followers{
+   margin-top: 100px;
+   height: 256px;
+   border-radius: 30px;
+   padding: 60px;
+   border: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.2), 0px 6px 20px 0px rgba(0,0,0,0.19);
+ }
+ .followers-content{
+   color: rgba(24, 25, 31, 1);
+   font-size: 3rem;
+   font-weight: 700;
+ }
+ .followers-title{
+   color: rgba(24, 25, 31, 1);
+   font-size: 1rem;
+   font-weight: 400;
+ }
+ /* responsive */
+ @media screen and (max-width:576px) {
+   .followers{
+      flex-direction: column;
+      padding: 0px;
+      text-align: center;
+      height: auto;
+   }
+   
+ }
+ /* footer style */
+ footer{
+   margin-top: 100px;
+   height: 300px;
+   background-color: black;
+   text-align: center;
+ }
+ .footer-title{
+   padding-top: 60px;
+   color: rgba(91, 91, 91, 1);
+   font-size: 1.850rem;
+   font-weight: 700;
+ }
+ .yellow{
+   color: rgba(251, 162, 79, 1);
+   font-size: 1.850rem;
+   font-weight: 700;
+ }
+ .footer-description{
+   color: white;
+   font-size: 0.825rem;
+   font-weight: 400px;
+ }
+
